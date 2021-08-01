@@ -1,0 +1,13 @@
+{
+  "name": "nginx-node",
+  "version": "1.0.0",
+  "description": "FullCycle - Nginx com node",
+  "author": "Renato Salvador <renatosalvador.esrt@gmail.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.18.1",
+    "unique-names-generator": "^4.6.0"
+  }
+}
