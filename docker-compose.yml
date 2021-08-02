@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile
     image: nodejs
     container_name: nodejs
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s docker-entrypoint.sh
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s node app.js
     hostname: nodejs
     tty: true
     volumes:

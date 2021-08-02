@@ -20,5 +20,3 @@ RUN npm install
 COPY --chown=node:node . .
 
 EXPOSE 9090
-
-CMD [ "node", "app.js" ]
