@@ -26,6 +26,7 @@ services:
     tty: true
     volumes:
       - "./node:/home/node/app"
+      - "/home/node/app/node_modules"
     ports:
       - "9090:9090" 
     restart: unless-stopped
@@ -51,5 +52,8 @@ services:
 networks:
   app-network:
     driver: bridge
+
+volumes:
+  node_modules:
 
     

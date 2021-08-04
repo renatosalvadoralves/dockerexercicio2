@@ -13,9 +13,10 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 COPY package*.json ./
 
-USER node
+RUN npm install -g npm && \
+    npm install
 
-RUN npm install
+USER node
 
 COPY --chown=node:node . .
 
